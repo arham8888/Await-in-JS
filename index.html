@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        async function add(a, b) {
+            let response = await (a + b);
+            display(response);
+        }
+
+        function display(some) {
+            document.getElementById("result").innerHTML = some;
+        }
+
+        add(88, 12);  
+    </script>
+</body>
+
+</html>
